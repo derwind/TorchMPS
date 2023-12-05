@@ -17,7 +17,7 @@ As our models are built on Pytorch, users will need to have this installed in a 
 After cloning the repo, running `train_script.py` gives a simple example of how our MPS can be used to classify MNIST digits. In general, MPS models can be invoked by simply importing the class `MPS` from `torchmps.py`, and then creating a new `MPS` instance. For example, an MPS which classifies 32x32 images into one of 10 categories can be defined and used as follows:
 
 ```python
-from torchmps.py import MPS
+from torchmps import MPS
 
 my_mps = MPS(input_dim=32**2, output_dim=10, bond_dim=16)
 
